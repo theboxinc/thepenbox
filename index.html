@@ -93,20 +93,7 @@
             </div>
         </header>
         <br>    
-        <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}} style="width: 80%; height: 50%; background: #231F20"></canvas>
-        <script src="Build/the pen box web.loader.js"></script>
-        <script>
-          createUnityInstance(document.querySelector("#unity-canvas"), {
-            dataUrl: "Build/the pen box web.data",
-            frameworkUrl: "Build/the pen box web.framework.js",
-            codeUrl: "Build/the pen box web.wasm",
-            streamingAssetsUrl: "StreamingAssets",
-            companyName: "DefaultCompany",
-            productName: "The Pen Box",
-            productVersion: "1.0",
-            matchWebGLToCanvasSize=true
-          });
-        </script>
+        <p align="center"><iframe src="unity.html" style="width: 960px; height: 600px; border: 0"iframe></iframe></p>   
         <br>       
         <footer>
             <hr color=LavenderBlush>
