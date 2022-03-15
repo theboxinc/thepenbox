@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+    <link rel="stylesheet" href="style_main.css">
+    <style>
+        body{
+            cursor: url('images/cursor.png'), auto;
+            background-color: #0a1010;
+            color: GhostWhite;
+        } 
+            .products {
+            font-family: Win95;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 20px; 
+            width: 50%;
+        }
+        a:link {
+            color: LavenderBlush;
+            background-color: transparent;
+            text-decoration: none;
+        }                   
+        a:visited {
+            color: #ffccdd;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #ffe6ee;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a:active {
+            color: #ffe6ee;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        form {
+            font-family: Win95;
+        }
+    </style>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>SIGN UP</title>
+    </head>
+    <body>
+        <header>
+            <h1>THE BOX</h1>
+        </header>
+        <h2 style= "text-align: center; font-family: Sysfont;">Sign Up</h2>
+	    <br>
+        <form action="verarbeitung.php" method="get">
+        Name: <br>
+        <input type="text" name="vorname" size="20" maxlength="30" />
+        <br>
+        Surname: <br>
+        <input type="text" name="nachname" size="20" maxlength="30" /><br />
+        E-Mail: <br>
+        <input type="text" name="email" size="20" maxlength="30" />
+        <br>
+        Phone: <br>
+        <input type="text" name="telefon" size="20" maxlength="30" />
+        <br>
+        <input type="submit" value="Register" / style="font-family: Win95">
+        </form>
+        <footer>
+            <hr color=LavenderBlush>
+            <div style="margin-left: 6px">  
+                <a href="archive.html">Archive</a>
+                <a href="about_us.html">About Us</a>
+            </div>
+        </footer>
+    </body>
+</html>

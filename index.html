@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <link rel="stylesheet" href="style_main.css">
+      <style>
+            body{
+                cursor: url('images/cursor.png'), auto;
+                background-image: url('images/background_main.jpg');
+            }
+
+            .dropbtn {
+                background-color: DarkSlateBlue;
+                color: white;
+                padding-top: auto;
+                padding-bottom: auto;
+                padding-left: 16px;
+                padding-right: 16px;
+                font-size: 16px;
+                border: none;
+            }
+            .dropdown {
+                position: relative;
+                display: inline-flex;
+            }
+            .dropdown-content {
+                display: none;
+                font-family: Win95;
+                position: absolute;
+                top: 100%;
+                right: 0;
+                background-color: LavenderBlush;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+            }
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+            .dropdown-content a:hover {background-color: #ddd;}
+
+            .dropdown:hover .dropdown-content {display: block;}
+
+            .dropdown:hover .dropbtn {background-color: #372f6a;}
+            a.normal:link {
+                color: LavenderBlush;
+                background-color: transparent;
+                text-decoration: none;
+            }                   
+            a.normal:visited {
+                color: #ffccdd;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a.normal:hover, a.normal:active {
+                color: #ffe6ee;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a.drop:link {
+                color: #ffccdd;
+                background-color: transparent;
+                text-decoration: none;
+            }                   
+            a.drop:visited {
+                color: #ffb3cc;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a.drop:hover, a.normal:active {
+                color: #ff99bb;
+                background-color: transparent;
+                text-decoration: none;
+            }
+        </style>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+        <title>THE PENBOX</title>
+    </head>
+
+    <body> 
+        <header>
+            <h1>THE PENBOX</h1>
+            <div class="dropdown">
+              <button class="dropbtn"><img src="images/lightbulb.png"></button>    
+              <div class="dropdown-content">
+                <a href="https://zxing.org/w/decode.jspx" target="_blank" class="drop">Decode QR Codes</a>
+                <a href="https://morsecode.world/international/translator.html" target="_blank" class="drop">Morse Code</a>
+                <a href="https://www.rapidtables.com/convert/number/binary-to-ascii.html" target="_blank" class="drop">Binary Translator</a>
+              </div>
+            </div>
+        </header>
+        <br>    
+        <canvas id="unity-canvas" width={{{ WIDTH }}} height={{{ HEIGHT }}} style="width: 80%; height: 50%; background: #231F20"></canvas>
+        <script src="Build/the pen box web.loader.js"></script>
+        <script>
+          createUnityInstance(document.querySelector("#unity-canvas"), {
+            dataUrl: "Build/the pen box web.data",
+            frameworkUrl: "Build/the pen box web.framework.js",
+            codeUrl: "Build/the pen box web.wasm",
+            streamingAssetsUrl: "StreamingAssets",
+            companyName: "DefaultCompany",
+            productName: "The Pen Box",
+            productVersion: "1.0",
+            matchWebGLToCanvasSize=true
+          });
+        </script>
+        <br>       
+        <footer>
+            <hr color=LavenderBlush>
+            <div style="margin-left: 6px">            
+                <a href="archive.html" class="normal">Archive</a>
+                <a href="about_us.html" class="normal">About us</a>
+                <a href="sign_up.html" class="normal">Sign Up</a>
+            </div>
+        </footer>
+    </body>
+</html>
