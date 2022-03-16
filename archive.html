@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-        <link rel="stylesheet" href="style_main.css">
+        <link rel="stylesheet" href="style_main.css"> <!--Referenz zu style.css-->
         <style>
-            body{
+            body{ /*Defaultcursor, Hintergrund- und Schriftfarbe*/
                 cursor: url('images/cursor.png'), auto;
                 background-color: #0a1010;
                 color: GhostWhite;
             } 
-            img {
+            img { /*Bilder in diesem Dokument sollen zentriert sein*/
                 display: block;
                 margin-left: auto;
                 margin-right: auto;
             }
+            /*Farben der Links auf dieser Seite*/
             a:link {
                 color: LavenderBlush;
                 background-color: transparent;
@@ -23,37 +24,36 @@
                 background-color: transparent;
                 text-decoration: none;
             }
-            a:hover {
+            a:hover, a:active {
                 color: #ffe6ee;
                 background-color: transparent;
                 text-decoration: none;
             }
-            a:active {
-                color: #ffe6ee;
-                background-color: transparent;
-                text-decoration: none;
-            }
+            p { /*Paragraphen in diesem Dokument sollen zentriert sein*/
+                text-align: center; 
+                font-family: Win95;
+	        }
         </style>
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <title>ARCHIVE</title>
     </head>
     <body>
-        <header>
-            <h1>THE BOX</h1>
+        <header> <!--Siehe style.css-->
+            <h1>THE BOX</h1> <!--Siehe style.css-->
         </header>
-        <h2 style= "text-align: center; font-family: Sysfont;">Archive</h2>
-        <p style= "text-align: center; font-family: Win95;">17 May 2009</p>
-        <img src="images/2009.png" style="width: 50%;">
+        <h2 style= "text-align: center; font-family: Sysfont;">Archive</h2> <!--Untertitel, zentriert-->
+        <p>17 May 2009</p>
+        <img src="images/2009.png" style="width: 50%;"> <!--Zeitungsartikel 1-->
         <br>
-        <p style= "text-align: center; font-family: Win95;">16 February 2016</p>
-        <img src="images/2016.png" style="width: 50%;">
+        <p>16 February 2016</p>
+        <img src="images/2016.png" style="width: 50%;"> <!--Zeitungsartikel 2-->
         <br>
-        <footer>
-            <hr color=LavenderBlush>
-            <div style="margin-left: 6px"> 
-                <a href="about_us.html">About Us</a>
-                <a href="sign_up.html">Sign Up</a>
+        <footer> <!--Siehe style.css-->
+            <hr color=LavenderBlush> <!--Querstrich über dem Footer-->
+            <div style="margin-left: 6px"> <!--Links sollen 6px weg vom Rand sein-->
+                <a href="about_us.html">About Us</a> <!--Zu About Us-->
+                <a href="sign_up.html">Sign Up</a> <!--Zu einer Registrierungsseite-->
             </div>
         </footer>
     </body>
