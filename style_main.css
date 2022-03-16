@@ -1,40 +1,36 @@
 
-@font-face {
+@font-face { /*Neue Font-Family "Sysfont"*/
     font-family: 'Sysfont';
     src: url('fonts/sysfont.woff2') format('woff2'),
     url('fonts/sysfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-@font-face {
+@font-face { /*Neue Font-Family "Win95*/
     font-family: 'Win95';
     src: url('fonts/w95fa.woff2') format('woff2'),
     url('fonts/w95fa.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
-
-canvas {
-    padding: 0;
-    margin: auto;
-    display: block;
-}
-footer{
+footer{ /*Hintergrundfarbe, Schriftart und Grösse des Footers*/
     background-color: DarkSlateBlue;
     font-family: Win95;
     height: 32px;
 }
-h1{
-	display: inline-flex;
-    margin-top: auto;  
-    margin-bottom: auto;
-    margin-left: 12px;
-    color: LavenderBlush;
-}
-header{
+header{ /*Hintergrundfarbe, Schriftart und Grösse des Headers*/
     background-color: DarkSlateBlue;
     font-family: Sysfont;
     height: 50px;
+    /*Damit Titel und Dropdown nebeneinander auf den gegenüberliegenden Seiten angezeigt werden können*/
     display: flex;
     justify-content: space-between;
 }
+h1{ /*Formattierungen für Titel*/
+    display: inline-flex; 
+    margin-top: auto; /*Horizontal zentrieren*/
+    margin-bottom: auto;
+    margin-left: 12px; /*Damit der Titel 12px vom Rand weg ist*/
+    color: LavenderBlush;
+}
+
