@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="style_main.css"> <!--Referenz zu style.css-->
     <style>
-        body{
+        body{ /*Defaultcursor, Hintergrund- und Schriftfarbe*/
             cursor: url('images/cursor.png'), auto;
             background-color: #0a1010;
             color: GhostWhite;
         } 
-            .products {
-            font-family: Win95;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 20px; 
-            width: 50%;
-        }
+	/*Farben der Links auf dieser Seite*/
         a:link {
             color: LavenderBlush;
             background-color: transparent;
@@ -25,17 +19,12 @@
             background-color: transparent;
             text-decoration: none;
         }
-        a:hover {
+        a:hover, a:active {
             color: #ffe6ee;
             background-color: transparent;
             text-decoration: none;
         }
-        a:active {
-            color: #ffe6ee;
-            background-color: transparent;
-            text-decoration: none;
-        }
-        form {
+        form { /*Schriftart im Formular*/
             font-family: Win95;
         }
     </style>
@@ -44,11 +33,12 @@
     <title>SIGN UP</title>
     </head>
     <body>
-        <header>
-            <h1>THE BOX</h1>
+        <header> <!--Siehe style.css-->
+            <h1>THE BOX</h1> <!--Siehe style.css-->
         </header>
-        <h2 style= "text-align: center; font-family: Sysfont;">Sign Up</h2>
+        <h2 style= "text-align: center; font-family: Sysfont;">Sign Up</h2> <!--Untertitel, zentriert-->
 	    <br>
+	<!--PHP Formular für das Registrieren. Funktionieren tut es nicht-->
         <form action="verarbeitung.php" method="get">
         Name: <br>
         <input type="text" name="vorname" size="20" maxlength="30" />
@@ -63,11 +53,11 @@
         <br>
         <input type="submit" value="Register" / style="font-family: Win95">
         </form>
-        <footer>
-            <hr color=LavenderBlush>
-            <div style="margin-left: 6px">  
-                <a href="archive.html">Archive</a>
-                <a href="about_us.html">About Us</a>
+        <footer> <!--Siehe style.css-->
+            <hr color=LavenderBlush> <!--Querstrich über dem Footer-->
+            <div style="margin-left: 6px"> <!--Links sollen 6px weg vom Rand sein-->
+                <a href="archive.html">Archive</a> <!--Zum Archiv-->
+                <a href="about_us.html">About Us</a> <!--Zu About Us-->
             </div>
         </footer>
     </body>
