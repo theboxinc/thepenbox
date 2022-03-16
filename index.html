@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-      <link rel="stylesheet" href="style_main.css">
+      <link rel="stylesheet" href="style_main.css"> <!--Referenz zu style.css-->
       <style>
-            body{
+            body{ /*Defaultcursor und Hintergrundbild*/
                 cursor: url('images/cursor.png'), auto;
                 background-image: url('images/background_main.jpg');
             }
-
+            /*Formattierungen für das Dropdownmenu*/
             .dropbtn {
                 background-color: DarkSlateBlue;
                 color: white;
@@ -44,6 +44,7 @@
             .dropdown:hover .dropdown-content {display: block;}
 
             .dropdown:hover .dropbtn {background-color: #372f6a;}
+            /*Farben der Links ausserhalb des Dropdownmenus*/
             a.normal:link {
                 color: LavenderBlush;
                 background-color: transparent;
@@ -59,6 +60,7 @@
                 background-color: transparent;
                 text-decoration: none;
             }
+            /*Farben der Links im Dropdownmenu*/
             a.drop:link {
                 color: #ffccdd;
                 background-color: transparent;
@@ -81,24 +83,24 @@
     </head>
 
     <body> 
-        <header>
-            <h1>THE PENBOX</h1>
-            <div class="dropdown">
+        <header> <!--Siehe style.css-->
+            <h1>THE PENBOX</h1> <!--Siehe style.css-->
+            <div class="dropdown"> <!--Dropdownmenu-->
               <button class="dropbtn"><img src="images/lightbulb.png"></button>    
               <div class="dropdown-content">
-                <a href="https://4qrcode.com/scan-qr-code.php" target="_blank" class="drop">Decode QR Codes</a>
-                <a href="https://morsecode.world/international/translator.html" target="_blank" class="drop">Morse Code</a>
-                <a href="https://www.rapidtables.com/convert/number/binary-to-ascii.html" target="_blank" class="drop">Binary Translator</a>
+                <a href="https://4qrcode.com/scan-qr-code.php" target="_blank" class="drop">Decode QR Codes</a> <!--Zu einem QR Code Scanner, in einem neuen Tab-->
+                <a href="https://morsecode.world/international/translator.html" target="_blank" class="drop">Morse Code</a> <!--Zu einem Morsecodeübersetzer, in einem neuen Tab-->
+                <a href="https://www.rapidtables.com/convert/number/binary-to-ascii.html" target="_blank" class="drop">Binary Translator</a> <!--Zu einem Binarcodeübersetzer, in einem neuen Tab-->
               </div>
             </div>
         </header>   
-        <p align="center"><iframe src="unity.html" style="width: 1000px; height: 620px; border: 0"iframe></iframe></p>      
-        <footer>
-            <hr color=LavenderBlush>
-            <div style="margin-left: 6px">            
-                <a href="archive.html" class="normal">Archive</a>
-                <a href="about_us.html" class="normal">About us</a>
-                <a href="sign_up.html" class="normal">Sign Up</a>
+        <p align="center"><iframe src="unity.html" style="width: 1000px; height: 620px; border: 0"iframe></iframe></p> <!--Iframe mit Unityprojekt in unity.html, zentriert-->     
+        <footer> <!--Siehe style.css-->
+            <hr color=LavenderBlush> <!--Querstrich über dem Footer-->
+            <div style="margin-left: 6px"> <!--Links sollen 6px weg vom Rand sein-->
+                <a href="archive.html" class="normal">Archive</a> <!--Zum Archiv-->
+                <a href="about_us.html" class="normal">About us</a> <!--Zu About Us-->
+                <a href="sign_up.html" class="normal">Sign Up</a> <!--Zu einer Registrierungsseite-->
             </div>
         </footer>
     </body>
