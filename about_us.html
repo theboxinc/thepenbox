@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-    <link rel="stylesheet" href="style_main.css">
+    <link rel="stylesheet" href="style_main.css"> <!--Referenz zu style.css-->
     <style>
-        body{
+        body{ /*Defaultcursor, Hintergrund- und Schriftfarbe*/
             cursor: url('images/cursor.png'), auto;
             background-color: #0a1010;
             color: GhostWhite;
         } 
-            .products {
+            .products { /*Formattierung für Tabellen der Klasse products*/
             font-family: Win95;
-            margin-left: auto;
+            margin-left: auto; /*zentrieren*/
             margin-right: auto;
             margin-bottom: 20px; 
             width: 50%;
         }
+	/*Farben der Links auf dieser Seite*/
         a:link {
             color: LavenderBlush;
             background-color: transparent;
@@ -25,51 +26,50 @@
             background-color: transparent;
             text-decoration: none;
         }
-        a:hover {
+        a:hover, a:active {
             color: #ffe6ee;
             background-color: transparent;
             text-decoration: none;
         }
-        a:active {
-            color: #ffe6ee;
-            background-color: transparent;
-            text-decoration: none;
-        }
+	p { /*Paragraphen in diesem Dokument sollen zentriert sein*/
+	    text-align: center; 
+	    font-family: Win95;
+	}
     </style>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>ABOUT US</title>
     </head>
     <body>
-        <header>
-            <h1>THE BOX</h1>
+        <header> <!--Siehe style.css-->
+            <h1>THE BOX</h1> <!--Siehe style.css-->
         </header>
 
-        <h2 style= "text-align: center; font-family: Sysfont;">About Us</h2>
+        <h2 style= "text-align: center; font-family: Sysfont;">About Us</h2> <!--Untertitel, zentriert-->
 	    <br>
-        <p style= "text-align: center; font-family: Win95;"><cite>We make the world a better place! By providing free software and more to everyone.</cite> - Markus Mensch, Founder, August 2011</p>
+        <p><cite>We make the world a better place! By providing free software and more to everyone.</cite> - Markus Mensch, Founder, August 2011</p>
         <br>
-	    <p style= "text-align: center; font-family: Win95;"><cite>The Box is working meticulously on improving the future of humanity</cite> - Giangiovanni Tommaso, Lead Programmer, August 2012</p>
+	    <p><cite>The Box is working meticulously on improving the future of humanity</cite> - Giangiovanni Tommaso, Lead Programmer, August 2012</p>
         <br>
-	    <p style= "text-align: center; font-family: Win95;"><cite>The box is here for ȩ̷̦͕͈̱͈̅̈́̌̒́̑́̕ͅv̵̯͖͇̖̽ȩ̷̦͕͈̱͈̅̈́̌̒́̑́̕ͅŗ̴̛̺͚̳͓̪͓͗̾̇̎͊̕ͅy̵̢͕̥̘̻̭̅͝ộ̶̟̻̘͔͉̺͕͔̮̑͌̃̿̏̎͘͝ṅ̸̼͎̖̠̦̻̍̂́͗͗̈́ͅȩ̷̦͕͈̱͈̅̈́̌̒́̑́̕ͅ</cite> - Shannon T. Parker, Chief Marketing Officer, March 2016</p>
+	    <p><cite>The box is here for ȩ̷̦͕͈̱͈̅̈́̌̒́̑́̕ͅv̵̯͖͇̖̽ȩ̷̦͕͈̱͈̅̈́̌̒́̑́̕ͅŗ̴̛̺͚̳͓̪͓͗̾̇̎͊̕ͅy̵̢͕̥̘̻̭̅͝ộ̶̟̻̘͔͉̺͕͔̮̑͌̃̿̏̎͘͝ṅ̸̼͎̖̠̦̻̍̂́͗͗̈́ͅȩ̷̦͕͈̱͈̅̈́̌̒́̑́̕ͅ</cite> - Shannon T. Parker, Chief Marketing Officer, March 2016</p>
         <br>
-	    <h2 style= "text-align: center; font-family: Sysfont;">Our Products</h2>
+	    <h2 style= "text-align: center; font-family: Sysfont;">Our Products</h2> <!--Untertitel, zentriert-->
         <br>
-        <table class= "products" style="height:80px">
+        <table class= "products" style="height:80px"> <!--Tabelle-->
             <tr style= "text-align: center">
-                <td><a href="index.html">The Pen Box</a></td>
-                <td><a href="https://too-many-turtles.itch.io/erudite-knight" target="_blank">Erudite Knight</a></td>
-                <td><a href="clash.html" target="_blank">Clash of Kings</a></td>
+                <td><a href="index.html">The Pen Box</a></td> <!--Zurück zur Ursprungsseite-->
+                <td><a href="https://too-many-turtles.itch.io/erudite-knight" target="_blank">Erudite Knight</a></td> <!--Link zu Noam's Maturarbeitsspiel in einem neuen Tab-->
+                <td><a href="clash.html" target="_blank">Clash of Kings</a></td> <!--Link zu einer unfertigen Nachmachung von Clash Royale in Scratch in einem neuen Tab-->
             </tr>
             <tr style= " text-align: center">
-                <td><a href="404.html">untitled.exe</a></td>
+                <td><a href="404.html">untitled.exe</a></td> <!--Link zu einer 404-Error-Seite-->
             </tr>
         </table>   
-        <footer>
-            <hr color=LavenderBlush>
-            <div style="margin-left: 6px">  
-                <a href="archive.html">Archive</a>
-                <a href="sign_up.html">Sign Up</a>
+        <footer> <!--Siehe style.css-->
+            <hr color=LavenderBlush> <!--Querstrich über dem Footer-->
+            <div style="margin-left: 6px"> <!--Links sollen 6px weg vom Rand sein-->
+                <a href="archive.html">Archive</a> <!--Zum Archiv-->
+                <a href="sign_up.html">Sign Up</a> <!--Zu einer Registrierungsseite-->
             </div>
         </footer>
     </body>
