@@ -39,7 +39,7 @@
         <h2 style= "text-align: center; font-family: Sysfont;">Sign Up</h2> <!--Untertitel, zentriert-->
 	    <br>
 	<!--PHP Formular für das Registrieren. Funktionieren tut es nicht-->
-        <form action="verarbeitung.php" method="get">
+        <form action="sign_up.php" method="post">
         Name: <br>
         <input type="text" name="vorname" size="20" maxlength="30" />
         <br>
@@ -60,5 +60,50 @@
                 <a href="about_us.html">About Us</a> <!--Zu About Us-->
             </div>
         </footer>
+	    </div>
+        <?php 
+    $database = array();
+    $database['host'] = 'localhost';
+    $database['port'] = '3306';
+    $database['name'] = 'forum';
+    $database['vorname'] = 'root';
+    $database['nachname'] = 'root';
+    $database['database'] = 'forum';
+
+    $mysqli = new mysqli($database['host'], $database['username'], $database['password'], $database['database']);
+
+    if ($mysqli-> connect_errno) {
+        echo "Connection to the database: ".$database['name'] . ' failed';
+        echo 'Error : '.mysql_error();
+    } 
+            $username = $_POST['username'];
+            $kommentar = $_POST['kommentar'];
+
+            $sql = "INSERT INTO forum.users(vorname, nachname) VALUES ('$vorname', '$nachname');";
+
+            mysqli_query($mysqli, $sql);
+
+            $query = "SELECT * FROM users  ORDER BY id DESC";
+
+
+            echo '<table border="0" cellspacing="2" cellpadding="2"> 
+                    <tr> 
+                        <th> <font face="Helvetica">Name</font> </th> 
+                        <th> <font face="Helvetica">Kommentar</font> </th> 
+                    </tr>';
+
+            if ($result = $mysqli->query($query)) {
+                while ($row = $result->fetch_assoc()) {
+                    $username = $row["vorname"];
+                    $kommentar = $row["nachname"];
+                     echo ' <tr> 
+                               <td>'.$vorname.'</td>
+                              <td>'.$nachname.'</td>
+                            </tr>';
+                }
+            }
+            echo '</table>'
+        ?>
+    </div>
     </body>
 </html>
